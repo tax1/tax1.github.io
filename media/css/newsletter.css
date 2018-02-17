@@ -1,0 +1,103 @@
+article.content form#form-nl{
+	position: relative;
+	margin: 0px auto;
+}
+article.content form#form-nl ol,article.content form#form-nl ol > li{
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+article.content form#form-nl ol {
+	margin: 0;
+}
+article.content form#form-nl ol li {
+	position: relative;
+	float: left;
+	clear: none;
+	padding: 0;
+	width: auto!important;
+}
+article.content form#form-nl ol li#NewsletterFirstNameHeader,
+article.content form#form-nl ol li#NewsletterLastNameHeader,
+article.content form#form-nl ol li#NewsletterListHeader {
+	display: none;
+}
+article.content form#form-nl ol li#NewsletterEmailHeader {
+}
+article.content form#form-nl ol li#NewsletterSubmitHeader {
+	margin-left: 10px;
+}
+article.content form#form-nl label.field-title {
+	font-size: 16px;
+	font-weight: bold;
+	display: inline-block;
+	float: left;
+	width: 100px;
+	margin: 10px 0 0;
+}
+article.content form#form-nl li > span {
+	display: block;
+}
+article.content form#form-nl .txtbox-long {
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	font-size: 14px;
+	line-height: 30px;
+	color: #666;
+	padding: 5px 15px;
+	outline: none !important;
+	background: #f2f2f2;
+	border: 1px solid #ccc;
+	width: 300px;
+	height: 40px;
+	margin: 0px;
+	transition: all .4s;
+}
+article.content form#form-nl .txtbox-long:focus {
+	background: #eee;
+	border-bottom-color: #999;
+}
+article.content form#form-nl .required{
+	color:#c00;
+}
+article.content form#form-nl #NewsletterSubmitHeader{
+	text-align: left;
+}
+article.content form#form-nl #subscriber-submit {
+	font-family: "Roboto Slab", "Georgia", serif;
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 30px;
+	color: #fff;
+	padding: 5px 20px;
+	outline: none !important;
+	background: #d91e35;
+	border: 0;
+	width: auto;
+	display: inline-block;
+	margin: 0;
+	height: 40px;
+	transition: all .4s;
+	z-index: 5;
+	cursor: pointer;
+}
+article.content form#form-nl #subscriber-submit:hover {
+	background: #333;
+	color: #fff;
+}
+article.content form#form-nl .clearFix{
+	display:none;
+}
+article.content .formError {
+	left: 0!important;
+	top: 0!important;
+}
+
+
+@media only screen and (max-width : 992px) {
+}
+@media only screen and (max-width : 480px) {
+	article.content form#form-nl ol li#NewsletterSubmitHeader {
+		margin: 10px 0 0 0;
+	}
+}
+        

@@ -1,0 +1,159 @@
+            /*** ESSENTIAL STYLES ***/
+#navigation .sf-menu, #navigation .sf-menu * {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+#navigation .sf-menu li {
+	position: relative;
+}
+#navigation .sf-menu ul {
+	position: absolute;
+	display: none;
+	top: 100%;
+	left: 0;
+	z-index: 99;
+}
+#navigation .sf-menu > li {
+	float: left;
+}
+#navigation .sf-menu li:hover > ul,
+#navigation .sf-menu li.sfHover > ul {
+	display: block;
+}
+
+#navigation .sf-menu a {
+	display: block;
+	position: relative;
+}
+#navigation .sf-menu ul ul {
+	top: 0;
+	left: 100%;
+}
+
+
+/*** DEMO SKIN ***/
+#navigation .sf-menu a {
+    position: relative;
+    text-decoration: none;
+    color: #424241;
+    font-family: 'arial_narrowregular';
+    padding: 39px 3px;
+    font-weight: normal;
+    text-transform: uppercase;
+    font-size: 13px;
+    display: inline-block;
+}
+#navigation .sf-menu #long {
+     line-height: 16px;
+     padding: 38px 3px 36px;
+     text-align: center;
+     width: 93px;
+}
+#navigation .sf-menu li {
+    border-right: 1px solid #dddddd;
+}
+#navigation .sf-menu > li > a::before {
+	content: '';
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 0;
+    transition: width 0s ease, background .2s ease;
+}
+#navigation .sf-menu > li > a::after {
+	content: '';
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 2px;
+    width: 0;
+    background: #fff;
+    transition: width .2s ease;
+}
+#navigation .sf-menu > li > a:hover::before, #navigation .sf-menu > li.sfHover > a::before,
+#navigation .sf-menu > li.selected > a::before, #navigation .sf-menu > li.active > a::before {
+    width: 100%;
+    color: #97cfea;
+    background: #0b2f67;
+}
+#navigation .sf-menu > li > a:hover::after, #navigation .sf-menu > li.sfHover > a::after,
+#navigation .sf-menu > li.selected > a::after, #navigation .sf-menu > li.active > a::after {
+    width: 100%;
+    background: transparent;
+    transition: all 0s ease;
+}
+#navigation .sf-menu li a:hover, #navigation .sf-menu li.sfHover > a,
+#navigation .sf-menu li.selected > a, #navigation .sf-menu li.active > a {
+	color: #97cfea;
+    background: #0b2f67;
+}
+#navigation .sf-menu li ul {
+	background: rgba(26,26,26,.85);
+	padding: 5px 10px;
+	min-width: 150px;
+	box-shadow: 0px 2px 3px rgba(0,0,0,.2);
+}
+#navigation .sf-menu li ul li {
+	border-top: 1px solid rgba(255,255,255,.2);
+    border-right: 0;
+}
+#navigation .sf-menu li ul li:first-child {
+	border-top: none;
+}
+#navigation .sf-menu li ul a {
+	display: block;
+	font-size: 14px;
+    color: #fff;
+	border-bottom: none;
+	padding: 5px 10px;
+}
+#navigation .sf-menu ul li a:hover, #navigation .sf-menu ul li.sfHover > a,
+#navigation .sf-menu ul li.selected > a, #navigation .sf-menu ul li.active > a {
+	background: #000;
+}
+
+/*** arrows (for all except IE7) **/
+.sf-arrows .sf-with-ul {
+	padding-right: 2.5em;
+	*padding-right: 1em; /* no CSS arrows for IE7 (lack pseudo-elements) */
+}
+/* styling for both css and generated arrows */
+.sf-arrows .sf-with-ul:after {
+	content: '';
+	position: absolute;
+	right: 45%;
+    top: 74%;
+	margin-top: -3px;
+	height: 13px;
+	width: 13px;
+	background:  url(../images/fleche.png) no-repeat center;
+}
+.sf-arrows > li > .sf-with-ul:focus:after,
+.sf-arrows > li:hover > .sf-with-ul:after,
+.sf-arrows > .sfHover > .sf-with-ul:after {
+	border-top-color: #fff; /* IE8 fallback colour */
+}
+/* styling for right-facing arrows */
+.sf-arrows ul .sf-with-ul:after {
+	margin-top: -5px;
+	margin-right: -3px;
+	border-color: transparent;
+	border-left-color: #fff; /* edit this to suit design (no rgba in IE8) */
+	border-left-color: rgba(53,94,135,.5);
+}
+.sf-arrows ul li > .sf-with-ul:focus:after,
+.sf-arrows ul li:hover > .sf-with-ul:after,
+.sf-arrows ul .sfHover > .sf-with-ul:after {
+	border-left-color: white;
+}
+.sf-vertical.sf-arrows > li > .sf-with-ul:after {
+    border-color: rgba(53,94,135, 0) rgba(53,94,135, 0) rgba(53,94,135, 0) rgba(53,94,135, 0.5) !important;
+    margin-right: 0;
+    margin-top: -5px;
+}
+
+        

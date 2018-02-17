@@ -1,0 +1,253 @@
+                                                                                                                                                @import url(http://fonts.googleapis.com/css?family=Cantarell);
+form.contactForm {
+	position: relative;
+	display: block;
+	text-align: left;
+	margin-top: 10px;
+}
+form.contactForm .clear {
+	clear: both;
+}
+form.contactForm > fieldset {
+	width: 100%;
+}
+form.contactForm legend {
+	font-weight: bold;
+	padding-top: 15px;
+	font-size: 16px;
+	min-height: 25px;
+	display: block;
+}
+form.contactForm legend.FormTitle {
+	display: none;
+}
+form.contactForm .formItem {
+	position:relative;
+	margin-right: 2px;
+	display:block;
+	padding: 0px;
+	margin-bottom: 10px;
+	overflow: hidden;
+	width: 49.7%;
+	float: left;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+form.contactForm .formItem.fullwidth {
+	width: 100%;
+	float: none;
+	clear: both;
+}
+form.contactForm #infoFrame {
+}
+form.contactForm br {
+	display:none;
+}
+form.contactForm .singleText br {
+	display:inline-block;
+}
+form.contactForm label {
+	display: block;
+	display: block\9;
+	font-family: 'Cantarell', sans-serif;
+font-size:14px;
+	color: #8d8d8d;
+	font-weight: 400 !important;
+}
+form.contactForm span.two-column {
+	display: block;
+	float: left;
+	width: 260px;
+}
+form.contactForm span.two-column span {
+	display: inline-block;
+	width: 10px;
+	text-align: center;
+}
+form.contactForm .text-input, form.contactForm .contactSelect, form.contactForm .datepicker{
+	border: none;
+	font-family: 'Cantarell', sans-serif;
+	font-size:14px;
+	color: #000;
+	height: 16px;
+	padding: 4px 8px;
+	outline: none !important;
+	background: #f6f5f5;
+	border: 1px solid rgba(0,0,0,.2);
+	width: 100% !important;
+	height: 35px;
+	-webkit-transition: all .4s;
+	-moz-transition: all .4s;
+	-o-transition: all .4s;
+	transition: all .4s;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+form.contactForm .contactSelect {
+	height:30px;
+	width:auto;
+	line-height:30px;
+	padding: 5px 10px;
+}
+form.contactForm .contactSelect option{
+	line-height:30px;
+	background: #666;
+	color: #fff;
+}
+form.contactForm textarea.text-input {
+	height: 150px;
+	overflow: auto;
+	vertical-align:top;
+}
+form.contactForm .formItem.fullwidth textarea.text-input {
+	width: 100% !important;
+}
+form.contactForm .text-input:focus, form.contactForm .datepicker:focus{
+	background: #b0b5b9;
+	color: #fff;
+}
+form.contactForm input[type=radio], form.contactForm input[type=checkbox] {
+	display: inline;
+	width: auto;
+	margin: 2px 5px 0px 0px;
+	vertical-align: top;
+}
+form.contactForm .option {
+	display: inline-block;
+	padding: 5px 15px 0px 0px;
+}
+form.contactForm #file-uploader {
+	margin: 10px 0 0;
+}
+form.contactForm #containerNS{
+	position: relative;
+	overflow: auto;
+	padding: 5px 0px;
+}
+form.contactForm #containerNS #newsletterSubscriptionText{
+	display: inline-block;
+}
+form.contactForm #containerNS #checkboxSubs{
+	float: left;
+}
+form.contactForm small {
+	display: block;
+	font-size: 9px;
+	color: #999;
+}
+form.contactForm .QapTcha {
+	padding: 0;
+	margin: 10px 0 0;
+	width: auto;
+	float: left;
+}
+form.contactForm .QapTcha #Icons {
+	margin-right: 5px;
+	margin-left: 5px;
+}
+form.contactForm .QapTcha .TxtStatus {
+	display: block;
+	clear: both;
+	text-align: left;
+	line-height: 25px;
+	
+	margin-bottom: 10px;
+}
+form.contactForm .required,
+form.contactForm .QapTcha .TxtStatus.dropError {
+	color: #0f2e50;
+}
+form.contactForm .QapTcha .TxtStatus.dropSuccess {
+	color:#0f2e50;
+}
+form.contactForm .QapTcha .dropError {
+	color: #0f2e50;
+}
+form.contactForm .QapTcha .clr {
+	display: none;
+}
+form.contactForm .submitButton {
+	position: relative;
+	margin:0px 5px 0 0;
+	float: right;
+}
+form.contactForm #QapTcha {
+	display:block;
+	margin:0px;
+}
+form.contactForm input[type=submit], form.contactForm input.submit-button {
+	position: relative;
+	cursor: pointer;
+	padding: 3px 8px;
+	text-decoration: none;
+	margin: 0px;
+	display: inline-block;
+	font: 16px/30px "Raleway", Arial, "Helvetica Neue", Helvetica, sans-serif;
+	text-transform: uppercase;
+	color: #ffffff;
+	-webkit-transition: all .4s;
+	-moz-transition: all .4s;
+	-o-transition: all .4s;
+	transition: all .4s;
+	background: #0f2e50 url(../images/icon-arrow-right.png) no-repeat 200px center;
+	border: none;
+	z-index: 5;
+}
+form.contactForm input[type=submit]:hover, form.contactForm input.submit-button:hover {
+	background-position: right center;
+	background-color: #0f2e50;
+	color: #ffffff;
+	padding-right: 30px;
+}
+form.contactForm input.submit-button[disabled],
+form.contactForm input.submit-button[disabled]:hover {
+	color: rgba(255,255,255,1);
+	cursor: default;
+	background-color: #0f2e50;
+	background-position: 200px center;
+	box-shadow: none;
+	padding: 3px 8px;
+	z-index: 15;
+}
+form.contactForm .private_policy {
+}
+form.contactForm .private_policy_link {
+	display: inline-block;
+	font-size: 14px;
+}
+
+form.contactForm .id_paragraph_text_1 .infoLabel{
+	display:none;
+}
+
+#ui-datepicker-div{
+	z-index:20 !important;
+}
+
+
+@media only screen and (max-width : 480px) {
+	form.contactForm .formItem {
+		width: 100%;
+		float: none;
+	}
+	form.contactForm .text-input, form.contactForm .contactSelect, form.contactForm .datepicker, form.contactForm .formItem.fullwidth textarea.text-input{
+		width: 100%;
+	}
+	form.contactForm .submitButton, form.contactForm .QapTcha {
+		float: none;
+	}
+}
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
