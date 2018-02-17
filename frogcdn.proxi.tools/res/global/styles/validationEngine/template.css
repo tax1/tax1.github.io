@@ -1,0 +1,10 @@
+form.formular {overflow: hidden;}
+.formular fieldset {margin-top: 20px;padding: 15px;border: 1px solid #ccc;}
+.formular legend {font-weight: bold;}
+.formular input, .formular select, .formular textarea {display: block;margin-bottom: 5px;font-family: Tahoma, Arial, Helvetica, sans-serif;font-size: 12px;}
+.formular .text-input {width: 250px;color: #555;padding: 4px;border: 1px solid #ccc;margin-top: 4px;background: #FFF;}
+.formular textarea {width: 250px;height: 80px;color: #555;padding: 4px;border: 1px solid #ccc;margin-top: 4px;background: #FFF;}
+.formular .infos {background: #FFF;color: #333;padding: 10px;margin-bottom: 10px;}
+.formular span.checkbox, .formular .checkbox {display: inline;}
+.formular .submit {border: 1px solid #ccc;padding: 4px;margin-top: 10px;float: right;text-decoration: none;cursor: pointer;}
+.formular hr {clear: both;visibility: hidden;}
